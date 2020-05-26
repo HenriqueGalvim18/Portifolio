@@ -1,0 +1,212 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}	
+
+ /*  Area das tags  */
+ a{
+	 text-decoration:none;
+ }
+ 
+ a:hover{
+	 text-decoration:underline;
+ }
+ 
+body{
+	background-color:black;
+	
+	background-size:100vh;
+	color:white;
+	height:100vh;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+
+header{
+	display:flex;
+	height:60vh;
+	justify-content:center;
+	align-items:center;
+	
+}
+h1,h2{
+	text-align:center;
+}
+
+
+ /* Area das classes */
+ .contato{
+	 height:30vh;
+ }
+ .contato a:hover {
+    color: white;
+    text-shadow: 0px 0px 10px white;
+ }
+.contato  a:active{
+	color: white;
+    text-shadow: 0px 0px 10px white;
+}
+ .contato a {
+    color: lightgray;
+    font-size: 4em;
+    margin: 5px;
+    transition: text-shadow 0.2s;
+ }
+ .contato .icons {
+    text-align: center;
+	padding-top:20px;
+	padding-right:20px;
+}
+ .grid-container {
+  display: grid;
+  grid-gap: 50px 50px;
+  grid-template-columns:auto auto;
+  
+  padding: 10px;
+}
+
+.grid-item {
+  
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.info{
+	font-family: 'Titillium Web', sans-serif;
+}
+ .img-portfolio{
+	
+	height: 170px;
+    width: 160;
+    object-fit: cover;
+    transition: transform 500ms;
+    border-radius: 30px;
+	border: solid 2px white;
+	
+	
+ }
+ .links{
+	 color:whitesmoke;
+	 display:block;
+	 padding:0 0 10px 0;
+	 
+ }
+.Mario{
+	padding: 0 0 60px 0;
+	text-shadow: 2px 2px #FF0000;
+}
+ .menu{
+	 background-color: #CD853F;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    padding: 5px 0;
+ }
+ .menu a{
+	 display: block;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #708090;
+    font-weight: bold;
+    transition: background-color 2s, color 2s; /*eh como se fosse um pré aviso da animação */
+    color: #011d2b;
+	
+ }
+ .menu a{
+	 transition: background-color 2s,color 2s; /*essa eh a animação,quando a pagina for iniciada,o back... e a cor irão aparecer em 
+	 1.5s,isto tambem se aplica pra quando for utilizado o hover*/
+ }
+ .menu a:hover,.menu a:active{/*A sub-propriedade hover se ativa quando passamos a seta por cima,ela fara as diversas mudanças de acordo com oq for declarado */
+	 background-color:teal;
+	 color:white;
+ }
+ .menu ul{
+	 background-color:#CD853F;
+	 display:flex;
+	 justify-content:space-around;
+ }
+
+.menu li{
+	list-style:none; /*Ela tira o ponto das listas,deixando esteticamente mais bonito*/
+}
+.titulos{
+	
+	height: 60vh;
+    margin-top: 40px;
+    padding-bottom: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items:center;
+    background-color: rgba(0, 0, 0, .6);
+    animation: linear 0.6s animacaotitulos /* pesquisar pra que serve essa propriedade*/
+}
+.titulos{
+	font-family: 'Merriweather', serif;
+}
+
+@media(min-width:350px){
+	body{
+		font-size:16px
+	}
+	.menu{
+	 background-color: #CD853F;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    padding: 5px 0;
+ }
+  .grid-container {
+  display: grid;
+  grid-gap: 50px 50px;
+  grid-template-columns:auto;
+  
+  padding: 10px;
+}
+.grid-icons{
+	display: grid;
+  grid-gap: 50px 50px;
+  grid-template-columns:auto auto;
+  padding:10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size:20px;
+  text-align: center;
+}
+.contato a {
+    color: lightgray;
+    font-size: 4em;
+    margin: 5px;
+    transition: text-shadow 0.2s;
+ }
+.contato  a:active{
+	color: white;
+    text-shadow: 0px 0px 10px white;
+}
+	
+}
+@media(min-width:650px){
+	body{
+		font-size:16px
+	}
+	.menu{
+	 background-color: #CD853F;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    padding: 5px 0;
+ }
+  .grid-container {
+  display: grid;
+  grid-gap: 50px 50px;
+  grid-template-columns:auto auto;
+  
+  padding: 10px;
+}
+	
+}
